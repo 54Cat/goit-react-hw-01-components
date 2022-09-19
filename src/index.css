@@ -13,3 +13,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #010101;
+  --color-primary-bg: rgb(231, 236, 243);
+  --color-secondary-bg: rgb(0, 188, 213);
+
+  --color-primary-text: #212121;
+  --color-secondary-text: #757575;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
