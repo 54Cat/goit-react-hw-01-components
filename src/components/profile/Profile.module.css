@@ -21,8 +21,9 @@
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: var(--color-primary-bg);
 }
 
 .name {
@@ -41,7 +42,7 @@
     color: var(--color-secondary-text);
 }
 
-.stats {
+.statsListProfile {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -49,16 +50,16 @@
     background-color: var(--color-primary-bg);
 }
 
-.statsItem{
+.statsItemProfile{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-basis: calc(100% / 3);
-    border-right: 1px solid var(--color-white);
+    border-right: 2px solid var(--color-white);
     padding: 8px;
 }
 
- .statsItem:last-child {
+ .statsItemProfile:last-child {
      border-right: none;
  }
 

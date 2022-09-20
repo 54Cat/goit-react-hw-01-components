@@ -1,4 +1,33 @@
-.friendList{
-    outline: 1px solid red;
-    background-color: #b08b40;
+table {
+    width: 450px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+td,
+th {
+    border-left: 2px solid var(--color-white);
+    padding: 4px 0;
+}
+
+td:first-child ,
+th:first-child {
+    border-left: none;
+}
+
+tr:nth-child(even) {
+    background: var(--color-primary-bg);
+}
+
+thead {
+    background: var(--color-secondary-bg);
+}
+
+thead th {
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
 }

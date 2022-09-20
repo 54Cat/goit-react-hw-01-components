@@ -4,7 +4,7 @@ import css from 'components/statistics/Statistics.module.css';
 export default function StatisticsItem
     ({ label, percentage }) {
     return (
-    <li className={css.item}>
+    <li className={css.statsItem}>
         <span className={css.label}>{label}</span>
         <span className={css.percentage}>{percentage}</span>
     </li>

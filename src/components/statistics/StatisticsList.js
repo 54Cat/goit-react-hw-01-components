@@ -6,7 +6,7 @@ export default function StatisticsList
     ({ items }) {
     const elements = items.map(({ id, label, percentage }) => <StatisticsItem key={id} label={label} percentage={percentage} />)
     return (
-        <ul className={css.statList}> {elements} </ul>
+        <ul className={css.statsList}> {elements} </ul>
     )
 }
 
