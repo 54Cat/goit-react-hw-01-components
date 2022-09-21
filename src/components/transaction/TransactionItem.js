@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types';
-// import css from 'components/transaction/Transaction.module.css';
+import {string} from 'prop-types';
 
 export default function TransactionItem
     ({ type, amount, currency }) {
@@ -13,7 +12,7 @@ export default function TransactionItem
 }
 
 TransactionItem.propTypes = {
-    type: PropTypes.string,
-    amount: PropTypes.string,
-    currency: PropTypes.string,
+    type: string,
+    amount: string,
+    currency: string,
 }

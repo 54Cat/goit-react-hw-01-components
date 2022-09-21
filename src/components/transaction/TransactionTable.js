@@ -13,5 +13,8 @@ export default function TransactionTable
 TransactionTable.propTypes = {
     items: arrayOf(shape({
         id: string.isRequired,
+        type: string,
+        amount: string,
+        currency: string,
     }))
 }
