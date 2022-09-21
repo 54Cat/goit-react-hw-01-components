@@ -1,4 +1,4 @@
-import {string, number} from 'prop-types';
+import PropTypes from 'prop-types';
 import css from 'components/statistics/Statistics.module.css';
 
 export default function StatisticsItem
@@ -12,6 +12,6 @@ export default function StatisticsItem
 }
 
 StatisticsItem.propTypes = {
-    label: string,
-    percentage: number,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
 }

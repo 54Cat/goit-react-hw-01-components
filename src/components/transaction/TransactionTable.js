@@ -1,6 +1,5 @@
-import {arrayOf, shape, string} from 'prop-types';
+import PropTypes from 'prop-types';
 import TransactionItem from 'components/transaction/TransactionItem';
-// import css from 'components/transaction/Transaction.module.css';
 
 export default function TransactionTable
     ({ items }) {
@@ -11,10 +10,10 @@ export default function TransactionTable
 }
 
 TransactionTable.propTypes = {
-    items: arrayOf(shape({
-        id: string.isRequired,
-        type: string,
-        amount: string,
-        currency: string,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string,
+        amount: PropTypes.string,
+        currency: PropTypes.string,
     }))
 }

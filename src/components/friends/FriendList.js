@@ -1,4 +1,4 @@
-import {arrayOf, shape, number } from 'prop-types';
+import PropTypes from 'prop-types';
 import FriendItem from 'components/friends/FriendItem';
 import css from 'components/friends/Friends.module.css';
 
@@ -11,7 +11,7 @@ export default function FriendList
 }
 
 FriendList.propTypes = {
-    items: arrayOf(shape({
-        id: number.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
     }))
 }

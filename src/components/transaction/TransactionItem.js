@@ -1,4 +1,4 @@
-import {string} from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function TransactionItem
     ({ type, amount, currency }) {
@@ -12,7 +12,7 @@ export default function TransactionItem
 }
 
 TransactionItem.propTypes = {
-    type: string,
-    amount: string,
-    currency: string,
+    type: PropTypes.string,
+    amount: PropTypes.string,
+    currency: PropTypes.string,
 }

@@ -1,4 +1,4 @@
-import { array } from 'prop-types';
+import PropTypes from 'prop-types';
 import TransactionTable from 'components/transaction/TransactionTable';
 import css from 'components/transaction/Transaction.module.css';
 
@@ -16,5 +16,5 @@ export default function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-    items: array,
+    items: PropTypes.array,
 }

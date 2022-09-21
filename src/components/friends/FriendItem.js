@@ -1,4 +1,4 @@
-import {string, bool} from 'prop-types';
+import PropTypes from 'prop-types';
 import css from 'components/friends/Friends.module.css';
 
 export default function FriendItem
@@ -13,7 +13,7 @@ export default function FriendItem
 }
 
 FriendItem.propTypes = {
-    avatar: string,
-    name: string,
-    isOnline: bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
 }

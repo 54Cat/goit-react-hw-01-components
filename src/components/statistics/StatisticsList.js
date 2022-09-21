@@ -1,4 +1,4 @@
-import {string, number, arrayOf, shape} from 'prop-types';
+import PropTypes from 'prop-types';
 import StatisticsItem from 'components/statistics/StatisticsItem';
 import css from 'components/statistics/Statistics.module.css';
 
@@ -11,9 +11,9 @@ export default function StatisticsList
 }
 
 StatisticsList.propTypes = {
-    items: arrayOf(shape({
-        id: string.isRequired,
-        label: string,
-        percentage: number,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string,
+        percentage: PropTypes.number,
     }))
 }
